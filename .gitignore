@@ -71,7 +71,6 @@ yarn.lock
 docker-compose.yml
 docker-compose.override.yml
 .dockerignore
-Dockerfile
 .docker/
 docker-compose.prod.yml
 docker-compose.dev.yml

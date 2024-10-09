@@ -2,19 +2,19 @@ version: '3'
 
 services:
   backend:
-    build: ./backend
+    build: ./django_backend
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./backend:/usr/src/app
+      - ./django_backend:/usr/src/app
     ports:
       - "8000:8000"
     depends_on:
       - db
 
   frontend:
-    build: ./frontend
+    build: ./angular_frontend
     volumes:
-      - ./frontend:/usr/src/app
+      - ./angular_frontend:/usr/src/app
     ports:
       - "4200:80"
 

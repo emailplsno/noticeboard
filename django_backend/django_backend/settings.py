@@ -55,8 +55,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200/",
+    "http://localhost:4200",  # Correct, without trailing slash
 ]
+
 
 ROOT_URLCONF = 'django_backend.urls'
 

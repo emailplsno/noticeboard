@@ -22,6 +22,7 @@ venv/
 env/
 .venv/
 .env/
+project-venv/
 
 # pipenv
 Pipfile.lock

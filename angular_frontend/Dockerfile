@@ -14,7 +14,7 @@ RUN npm run build --prod
 # Stage 2: Serve the Angular app using Nginx
 FROM nginx:alpine
 
-COPY --from=build /usr/src/app/dist/frontend /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/angular_frontend /usr/share/nginx/html
 
 EXPOSE 80
 

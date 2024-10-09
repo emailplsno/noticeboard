@@ -4,8 +4,7 @@ services:
   backend:
     build: ./django_backend
     command: >
-      sh -c "python manage.py migrate &&
-             python manage.py runserver 0.0.0.0:8000"
+      sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./django_backend:/usr/src/app
     ports:
@@ -30,15 +29,17 @@ services:
       - ./angular_frontend:/usr/src/app
     ports:
       - "4200:80"
+    environment:
+      - API_URL=http://django_backend:8000  # Refers to the backend container by service name
 
   db:
     image: postgres:13
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: ${DATABASE_NAME}
       POSTGRES_USER: ${DATABASE_USER}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:

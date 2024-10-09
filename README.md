@@ -3,21 +3,23 @@
 
 ## Backend setup:
 
-Initialize venv
+Initialize new venv
 - python -m venv project-venv
+
+Install requirements (only after generating virtual environment)
 - pip install -r requirements.txt
 
 Start venv<sup>windows</sup>
-- project-ven\Scripts\activate
+- project-venv\Scripts\activate
 
 setup Django
 - pip install django djangorestframework django-cors-headers requests
 
 Create backend project
-- django-admin startproject backend
+- django-admin startproject django_backend
 
 Test if everything works<sup>windows</sup>
-- python manage.py runserver
+- python django_backend/manage.py runserver
 
 Create backend app (No clue if we need this)
 - python manage.py startapp testApp

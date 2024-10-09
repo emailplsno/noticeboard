@@ -68,7 +68,7 @@ yarn.lock
 
 # Ignore Docker files and container settings
 *.env
-docker-compose.yml
+#docker-compose.yml
 docker-compose.override.yml
 .dockerignore
 .docker/

@@ -1,0 +1,100 @@
+# Python/Django
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Ignore local virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# pipenv
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# Django Migrations
+**/migrations/
+
+# Static and media files
+staticfiles/
+media/
+
+# Secrets and environment files
+.env
+.env.*
+
+# Angular
+
+# Angular build artifacts
+dist/
+tmp/
+out-tsc/
+.angular/
+
+# Generated files from Angular CLI
+.angular/
+coverage/
+
+# Angular environment files
+src/environments/*.ts
+
+# NPM packages
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Docker
+
+# Ignore Docker files and container settings
+*.env
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+Dockerfile
+.docker/
+docker-compose.prod.yml
+docker-compose.dev.yml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# OS specific files (macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
